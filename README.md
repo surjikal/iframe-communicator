@@ -10,7 +10,7 @@ It's written in CoffeeScript. If you want it in JavaScript, just compile it ;)
 
 ## Usage example
 
-### Parent.jade
+### parent.jade
 
 ```jade
 !!!
@@ -53,7 +53,7 @@ html
             iframe.src = REMOTE_URL
 ```
 
-### remote index.jade
+### remote.jade
 
 ```jade
 !!!
