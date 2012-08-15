@@ -1,4 +1,3 @@
-
 ###
 iframe-communicator
 Copyright (c) 2012 Nicolas Porter <porter.nicolas@gmail.com>
@@ -51,7 +50,7 @@ class IFrameCommunicator
 
 
     _receiveMessage: (e) =>
-        #return if (e.origin isnt @targetUrl) or (not e.data)
+        return if (e.origin isnt @targetUrl) or (not e.data)
 
         @_deserializeMessage e.data, (err, message) =>
             return console.error "Could not deserialize message: '#{err}'" if err
