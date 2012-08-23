@@ -67,7 +67,6 @@ class IFrameCommunicator
 
 
     _handleRemoteCallback: (message) =>
-        console.log message
         return if not message.callbackId
         callback = @_callbacks[message.callbackId]
         callback message.args...
